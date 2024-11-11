@@ -1,0 +1,9 @@
+create table register(
+  id varchar(50) not null primary key,
+  pass varchar(16) not null,
+  passcheck varchar(16) not null,
+  name varchar(10) not null,
+  telephone varchar(20) not null,
+  email varchar(50) not null,
+  reg_data datetime not null
+);
