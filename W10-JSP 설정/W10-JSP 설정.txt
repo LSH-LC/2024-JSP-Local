@@ -12,6 +12,7 @@ grant all privileges on basicjsp.* to 'jspid'@'localhost';
 
 grant PROCESS on *.* to 'jspid'@'localhost';
 
+(잠시 나갔다가 만든걸로 들어오기)
 use basicjsp
 
 create table member(
@@ -27,21 +28,27 @@ create table test(
   content text not null
 );
 
+(필요파일 넣기)
 C:\Users\109-1\eclipse-workspace\W10-JSP(프로젝트 이름)\src\main\webapp\WEB-INF\lib
 에 (mysql-connector-java)넣기
 
+(필요시)
 C:\Program Files\Java\jdk-11\lib
 에 (mysql-connector-java)넣기
 
+(이클립스에서 database development)
+(database connection 만들기)
 profile 이름:mysqlconn
 
 JAR리스트에서
 C:\Users\109-1\eclipse-workspace\W10-JSP(프로젝트 이름)\src\main\webapp\WEB-INF\lib
 에 있는 mysql-connector-java를 선택
 
+데이터베이스 정보 입력
+
 test connection으로 연결 확인
 
 finish누르기
 
-(테이블보기)
+(테이블 보기)
 SELECT * FROM member;
