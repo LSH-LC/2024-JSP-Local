@@ -42,3 +42,6 @@ C:\Users\109-1\eclipse-workspace\W10-JSP(프로젝트 이름)\src\main\webapp\WE
 test connection으로 연결 확인
 
 finish누르기
+
+(테이블보기)
+SELECT * FROM member;
