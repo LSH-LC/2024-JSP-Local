@@ -5,5 +5,5 @@ create table register(
   name varchar(10) not null,
   telephone varchar(20) not null,
   email varchar(50) not null,
-  reg_data datetime not null
+  reg_date datetime not null
 );
