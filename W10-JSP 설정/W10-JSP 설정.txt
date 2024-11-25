@@ -22,7 +22,7 @@ create table member(
   id varchar(50) not null primary key,
   pass varchar(16) not null,
   name varchar(10) not null,
-  reg_data datetime not null
+  reg_date datetime not null
 );
 
 create table test(
