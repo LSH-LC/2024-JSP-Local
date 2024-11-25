@@ -13,6 +13,9 @@ grant all privileges on basicjsp.* to 'jspid'@'localhost';
 grant PROCESS on *.* to 'jspid'@'localhost';
 
 (잠시 나갔다가 만든걸로 들어오기)
+mysql -u jspid -p
+(jsppass)
+
 use basicjsp
 
 create table member(
