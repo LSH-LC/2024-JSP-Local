@@ -1,0 +1,10 @@
+CREATE TABLE list (
+    num INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    pass VARCHAR(50),
+    email VARCHAR(50),
+    title VARCHAR(50),
+    contents VARCHAR(50),
+    writedate DATETIME,
+    readcount INT
+);
