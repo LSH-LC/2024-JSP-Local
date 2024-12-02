@@ -5,4 +5,5 @@ email varchar(50),
 title varchar(50),
 contents varchar(50),
 writedate datetime,
-readcount INT;
+readcount INT,
+num INT);
