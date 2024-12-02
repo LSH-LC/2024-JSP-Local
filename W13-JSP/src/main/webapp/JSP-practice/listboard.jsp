@@ -71,7 +71,7 @@ int readcount = rs.getInt("readcount");
 	<TR bgcolor='ededed'>     
 		<TD align=center><font size=2 color='black'><%=num %></font></TD>     
 		<TD align=left>
-			<a href="write_output2.jsp?num=<%=num %>">
+			<a href="write_output.jsp?num=<%=num %>">
 			<font size=2 color="black"><%=title %></font></a>
 		</TD>
 		<TD align=center>    
