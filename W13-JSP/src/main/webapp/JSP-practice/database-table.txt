@@ -1,4 +1,4 @@
- create table list(
+create table list(
 name varchar(50) not null primary key,
 pass varchar(50),
 email varchar(50),
