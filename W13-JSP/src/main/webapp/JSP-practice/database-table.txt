@@ -1,9 +1,10 @@
-create table list(
-name varchar(50) not null primary key,
-pass varchar(50),
-email varchar(50),
-title varchar(50),
-contents varchar(50),
-writedate datetime,
-readcount INT,
-num INT);
+CREATE TABLE list (
+    num INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    pass VARCHAR(50),
+    email VARCHAR(50),
+    title VARCHAR(50),
+    contents VARCHAR(50),
+    writedate DATETIME,
+    readcount INT
+);
