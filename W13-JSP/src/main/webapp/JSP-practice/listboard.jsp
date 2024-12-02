@@ -24,7 +24,7 @@ Connection conn=null;
 PreparedStatement pstmt=null;
 String str="";
 
-String jdbcUrl="jdbc:mysql://localhost:3306/basicjsp";
+String jdbcUrl="jdbc:mysql://localhost:3306/board";
 String dbId="jspid";
 String dbPass="jsppass";
  
@@ -34,7 +34,7 @@ String dbPass="jsppass";
 
 Statement stmt = conn.createStatement();
 
-str = "SELECT * FROM tblboard ORDER BY num DESC";
+str = "SELECT * FROM list ORDER BY num DESC";
 ResultSet rs = stmt.executeQuery(str);
 %>
 
