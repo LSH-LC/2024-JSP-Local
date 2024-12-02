@@ -30,14 +30,14 @@ ResultSet rs = null;
 
 
 	
-	String jdbcUrl="jdbc:mysql://localhost:3306/basicjsp";
+	String jdbcUrl="jdbc:mysql://localhost:3306/board";
     String dbId="jspid";
     String dbPass="jsppass";
 	 
 	 Class.forName("com.mysql.jdbc.Driver");
 	 conn=DriverManager.getConnection(jdbcUrl,dbId ,dbPass );
 	
-str = "SELECT * FROM tblboard WHERE num = ?";
+str = "SELECT * FROM list WHERE num = ?";
 pstmt = conn.prepareStatement(str);
 pstmt.setInt(1, Integer.parseInt(num));
 
@@ -112,7 +112,7 @@ int readcount = rs.getInt("readcount");
 </TABLE>
 
 <%
-str = "UPDATE tblboard SET readcount=readcount+1 WHERE num = ?";
+str = "UPDATE list SET readcount=readcount+1 WHERE num = ?";
 pstmt = conn.prepareStatement(str);
 pstmt.setInt(1, Integer.parseInt(num));
 pstmt.executeUpdate();
